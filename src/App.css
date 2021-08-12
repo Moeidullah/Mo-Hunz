@@ -22,11 +22,125 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  
 }
 
 .App-link {
   color: #61dafb;
 }
+/* */
+
+
+.imgtask img {
+  width: 7%;
+  float: left;
+  margin-top: -7%;
+  margin-left: 5%;
+  border-top-left-radius: 2em;
+  border-bottom-right-radius: 2em;
+}
+
+.tasklist {
+  font-size: 100%;
+  /* background-color: red; */
+  background: linear-gradient(-1000deg, #c850c0, #4158d0);
+  margin-top: 10px;
+  border: 0px;
+  padding: 10px;
+  border-radius: 4px;
+  color: white;
+  box-shadow: #333 0px 1px 5px;
+}
+/* */
+.main-body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 100vh;
+  /* background: linear-gradient(-1000deg, #c850c0, #4158d0); */
+}
+
+.wrapper {
+  width: 450px;
+  background: #fff;
+  padding: 30px;
+  margin-top: -30%;
+  box-shadow: 0px 0px 10px rgba(0,0, 0, 0.1);
+}
+
+.wrapper .input-data{
+  height: 40px;
+  width: 100%;
+  position: relative;
+  margin-top: -2.5%;
+}
+
+.wrapper .input-data input{
+  height: 100%;
+  width: 100%;
+  border: none;
+  font-size: 17px;
+  border-bottom: 2px solid silver;
+}
+
+.wrapper .input-data label{
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  color: gray;
+  pointer-events: none;
+  transition:  all 0.3s ease;
+}
+textarea:focus, input:focus{
+  outline: none;
+}
+.input-data input:focus ~ label,
+.input-data input:valid ~ label {
+  transform: translateY(-20px);
+  font-size: 15px;
+  color: #4158d0;
+}
+.wrapper .input-data .underline{
+  position: absolute;
+  bottom: 0px;
+  height: 2px;
+  width: 100%;
+  
+  /* background:red;   */
+}
+.wrap{
+  /* margin: 20px; */
+  margin-top: -40%;
+  margin-left: 70%;
+  /* position: relative; */
+}
+
+.btn {
+  outline: none;
+  display: block;
+  border: solid 1px #0081D5;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  padding: 16px 30px;
+  border-radius: 30px;
+  background: #fff;
+  color: #0081D5;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  font: 'Montserrat', sans-serif;
+}
+.btn:hover,
+.btn.focus{
+  background: #005C99;
+  color: #fff;
+}
+.btn.active{
+  background: #003659;
+  color: #fff;
+}
+
 
 @keyframes App-logo-spin {
   from {
@@ -36,3 +150,5 @@
     transform: rotate(360deg);
   }
 }
+
+
