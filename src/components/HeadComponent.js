@@ -1,14 +1,14 @@
 import React from 'react'
 import ButtonComp from './ButtonComp'
+import Form from './Form'
 import Heading from './Heading'
 import InputField from './InputField'
 
 function HeadComponent() {
     return (
-        <div>
+        <div >
             <Heading />
-            <InputField />
-            <ButtonComp />
+            <Form />
         </div>
     )
 }
