@@ -32,9 +32,9 @@
 
 
 .imgtask img {
-  width: 7%;
+  width: 6%;
   float: left;
-  margin-top: -7%;
+  margin-top: -5.8%;
   margin-left: 5%;
   border-top-left-radius: 2em;
   border-bottom-right-radius: 2em;
@@ -111,8 +111,8 @@ textarea:focus, input:focus{
 }
 .wrap{
   /* margin: 20px; */
-  margin-top: -40%;
-  margin-left: 70%;
+  margin-top: -41%;
+  margin-left: 68%;
   /* position: relative; */
 }
 
