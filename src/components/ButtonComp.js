@@ -1,18 +1,16 @@
 import React from 'react'
-import { connect } from 'react-redux'
-import { addTodo } from '../actions/actionCreator'
+
 
 import InputField from './InputField'
 
-function ButtonComp(){
-
+const ButtonComp= (props) => {
     
     return (
         <div className="wrap">
             <div className="item">
 
-                 <button  className="btn">Add</button>
-                                 
+                 <button  className="btn" onClick={props.clickHandler}>Add</button>
+                    
             </div>
         </div>
     );
